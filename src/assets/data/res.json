@@ -1,0 +1,84 @@
+{
+  "credits": [
+    {
+      "project": "Julius Caesar",
+      "role": "Cinna the Poet",
+      "theater": {
+        "name": "TFANA",
+        "link": "https://www.tfana.org/"
+      },
+      "collaborator": {
+        "name": "Shana Cooper",
+        "link": "https://www.shanacooper.com/"
+      }
+    },
+    {
+      "project": "The Odyssey",
+      "role": "Elpenor",
+      "theater": {
+        "name": "OSF",
+        "link": "https://www.osfashland.org/"
+      },
+      "collaborator": {
+        "name": "Mary Zimmerman",
+        "link": "https://www.goodmantheatre.org/artists/mary-zimmerman/"
+      }
+    },
+    {
+      "project": "Bedlam: The Series",
+      "role": "Fenton",
+      "theater": {
+        "name": "Bedlam",
+        "link": "https://bedlam.org/"
+      },
+      "collaborator": {
+        "name": "Eric Tucker",
+        "link": "https://www.broadwayworld.com/people/Eric-Tucker/"
+      }
+    },
+    {
+      "project": "WTF Am I Doing",
+      "role": "Lead",
+      "theater": {
+        "name": "4 The Fans Productions"
+      },
+      "collaborator": {
+        "name": "Anthony Jones",
+        "link": "https://www.imdb.com/name/nm6464821"
+      }
+    },
+    {
+      "project": "Eighty-12",
+      "role": "Lead",
+      "theater": {
+        "name": "Amazon Prime Video"
+      },
+      "collaborator": {
+        "name": "Louis Rocky Bacigalupo",
+        "link": "https://www.louisrockybacigalupo.com/"
+      }
+    },
+    {
+      "project": "Super 180s",
+      "role": "Chris",
+      "theater": {
+        "name": "Columbia University"
+      }, 
+      "collaborator": {
+        "name": "Joshua Kellerman",
+        "link": "https://www.joshuamk.com/"
+      }
+    },
+    {
+      "project": "The Orange Cheddar Debacle",
+      "role": "Lead",
+      "theater": {
+        "name": "Ben Gunn Entertainment"
+      },
+      "collaborator": {
+        "name": "Forrest Fenske",
+        "link": "https://forrestfenske.com/"
+      }
+    }
+  ]
+}
