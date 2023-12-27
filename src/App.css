@@ -1,10 +1,17 @@
-body {
-    background-color: rgb(193, 223, 240);
-    max-width: 700px;
-    margin: auto;
+:root {
+    --c1: #000000FF;
+    --c2: rgba(0, 0, 0, 0.75);
+    --c3: #B4E1FFFF;
+    --c4: rgba(129, 244, 149, 0.5);
+    --c5: rgba(215, 180, 158, 0.75);
 }
 
-#root {
+body {
+    background-color: var(--c3);
+    max-width: 700px;
+    margin: auto;
+    color: var(--c1);
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.25);
     font-family: Ubuntu, serif;
     text-align: center;
 }
@@ -32,18 +39,34 @@ body {
 
 .divider {
     margin: 20px 0 20px 0;
-    height: 4px;
-    background-color: rgba(0, 0, 0, 1);
+    height: 2px;
+    background-color: var(--c2);
     border-radius: 2px;
 }
 
+.border {
+    box-shadow: 0 0 5px var(--c2);
+    border-style: solid;
+    border-color: var(--c1);
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.header-container {
+    margin: 15px auto;
+    padding: 0.5rem;
+    background-color: var(--c5);
+    width: 270px;
+}
+ 
 .name {
     font-weight: 500;
     font-size: 30px;
-    margin: 20px auto 5px auto;
+    margin: 0 auto 0.4rem auto;
 }
 
 .title {
+    color: var(--c2);
     font-weight: 500;
     margin: 0;
     font-size: 14px;
@@ -53,16 +76,12 @@ body {
     margin: 30px auto 0 auto;
     width: 200px;
     height: 300px;
-    border-radius: 12px;
     overflow: hidden;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
-    border-width: 4px;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
 }
 
 .portrait-mask img {
     height: 100%;
+    pointer-events: none;
 }
 
 .projects-header {
@@ -94,7 +113,7 @@ body {
 }
 
 a {
-    color: black;
+    color: var(--c1);
     text-decoration: none;
 }
 
@@ -103,15 +122,15 @@ a:hover {
 }
 
 a:visited {
-    color: black;
+    color: var(--c1);
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .material-container {
-    border-style: double;
-    border-radius: 10px;
     display: grid;
-    width: 500px;
-    height: 100px;
     margin: auto;
     grid-template-columns: 45% 45%;
     justify-content: space-evenly;
@@ -123,21 +142,52 @@ a:visited {
 }
 
 .material p {
-    font-weight: 300;
-    box-shadow: 0 0 2px black;
-    border-style: solid;
+    font-weight: 400;
     font-size: 18px;
     margin: auto;
     padding: 5px 0 5px 0;
     width: 80%;
-    background-color: #d9d9d9;
-    border-radius: 10px;
+    background-color: var(--c4);
 }
 
-.headshot {
+@media screen and (max-width: 725px) {
+    .resume-grid {
+        display: none;
+    }
     
+    #hide {
+        display: none;
+    }
+
+    .material-container {
+        grid-template-columns: 45%;
+        grid-row-gap: 1rem;
+    }
 }
 
-.resume {
+.rep-container {
+    padding: 1rem;
+    width: 280px;
+    margin: auto;
+    background-color: var(--c5);
+}
 
+.reel-container {
+    margin: 1.5rem auto;
+    width: 480px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.reel {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 525px){ 
+    .reel-container {
+        width: 336px;
+        height: 189px;
+    }
 }
