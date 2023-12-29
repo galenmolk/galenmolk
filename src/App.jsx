@@ -4,12 +4,13 @@ import resume from './assets/data/res.json'
 import dmtm from './assets/img/dmtm.webp'
 import Credit from "./Credit.jsx";
 import Material from "./Material.jsx";
+import ImageGallery from "./ImageGallery.jsx";
 
 function App() {
     return <>
         <div className='header-container border'>
-        <p className='name'>Galen Molk</p>
-        <p className='title'>Actor</p>
+            <p className='name'>Galen Molk</p>
+            <p className='title'>Actor</p>
         </div>
         <div className='portrait-mask border'>
             <img src={portrait} alt='Galen Molk'/>
@@ -50,6 +51,8 @@ function App() {
             <a href='mailto:DreamMakerTalent@aol.com'><p>DreamMakerTalent@aol.com</p></a>
         </div>
 
+        <div className='divider'/>
+        <ImageGallery/>
         <div className='divider'/>
     </>
 }
