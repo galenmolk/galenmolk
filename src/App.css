@@ -86,7 +86,6 @@ body {
 
 .projects-header {
     font-weight: 500;
-    margin-top: 30px;
     margin-bottom: 8px;
     font-size: 23px;
     text-align: left;
@@ -94,7 +93,8 @@ body {
 
 .resume-grid {
     width: 700px;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 0;
     display: grid;
     grid-template-columns: repeat(1, 100%);
 }

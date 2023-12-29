@@ -5,6 +5,7 @@ import dmtm from './assets/img/dmtm.webp'
 import Credit from "./Credit.jsx";
 import Material from "./Material.jsx";
 import ImageGallery from "./ImageGallery.jsx";
+import VerticalSpace from "./VerticalSpace.jsx";
 
 function App() {
     return <>
@@ -15,7 +16,7 @@ function App() {
         <div className='portrait-mask border'>
             <img src={portrait} alt='Galen Molk'/>
         </div>
-        <div className='divider'/>
+        <VerticalSpace height={'25px'} />
         <div className='material-container'>
             <Material material={{
                 name: "Headshot",
@@ -26,8 +27,6 @@ function App() {
                 link: "/galenmolk/galen-molk-resume.pdf"
             }}/>
         </div>
-        <div className='divider'/>
-
         <div className='resume-grid'>
             <p className='projects-header'>Highlights</p>
             {resume.credits.map((credit, idx) => {
@@ -41,6 +40,8 @@ function App() {
                     title='Galen Molk – Acting Reel'
                     allowFullScreen/>
         </div>
+        <ImageGallery/>
+        <VerticalSpace height={'20px'} />
         <div className='rep-container border'>
             <a href='https://www.dreammakertalent.com/' target='_blank'>
                 <img className='border' src={dmtm} alt='Dream Maker Talent Management'/>
@@ -50,9 +51,6 @@ function App() {
             <a href='tel:516-676-2197' target='_blank'><p>516-676-2197</p></a>
             <a href='mailto:DreamMakerTalent@aol.com'><p>DreamMakerTalent@aol.com</p></a>
         </div>
-
-        <div className='divider'/>
-        <ImageGallery/>
         <div className='divider'/>
     </>
 }
