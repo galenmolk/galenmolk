@@ -4,7 +4,7 @@ import resume from './assets/data/res.json'
 import dmtm from './assets/img/dmtm.webp'
 import Credit from "./Credit.jsx";
 import Material from "./Material.jsx";
-import ImageGallery from "./ImageGallery.jsx";
+import ImageGallery from "./ImageGallery/ImageGallery.jsx";
 import VerticalSpace from "./VerticalSpace.jsx";
 
 function App() {
@@ -13,10 +13,11 @@ function App() {
             <p className='name'>Galen Molk</p>
             <p className='title'>Actor</p>
         </div>
+        <VerticalSpace height={'25px'}/>
         <div className='portrait-mask border'>
             <img src={portrait} alt='Galen Molk'/>
         </div>
-        <VerticalSpace height={'25px'} />
+        <VerticalSpace height={'25px'}/>
         <div className='material-container'>
             <Material material={{
                 name: "Headshot",
@@ -33,15 +34,16 @@ function App() {
                 return <Credit credit={credit} key={idx}/>
             })}
         </div>
-        <div id='hide' className='divider'/>
+        <div className='divider'/>
         <div className='reel-container  border'>
             <iframe className='reel'
                     src='https://player.vimeo.com/video/442192311?h=64fda27ff1&byline=0&portrait=0'
                     title='Galen Molk – Acting Reel'
                     allowFullScreen/>
         </div>
+        <VerticalSpace height={'25px'}/>
         <ImageGallery/>
-        <VerticalSpace height={'20px'} />
+        <VerticalSpace height={'25px'}/>
         <div className='rep-container border'>
             <a href='https://www.dreammakertalent.com/' target='_blank'>
                 <img className='border' src={dmtm} alt='Dream Maker Talent Management'/>
@@ -50,6 +52,14 @@ function App() {
                 NY 11548</p></a>
             <a href='tel:516-676-2197' target='_blank'><p>516-676-2197</p></a>
             <a href='mailto:DreamMakerTalent@aol.com'><p>DreamMakerTalent@aol.com</p></a>
+        </div>
+        <VerticalSpace height={'25px'}/>
+        <div className='direct-contact-container border'>
+            <p className='bold'>Direct Contact</p>
+            <Material material={{
+                name: "galenmolk@gmail.com",
+                link: "mailto:galenmolk@gmail.com"
+            }}/>
         </div>
         <div className='divider'/>
     </>
