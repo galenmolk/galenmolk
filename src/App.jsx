@@ -21,11 +21,11 @@ function App() {
         <div className='material-container'>
             <Material material={{
                 name: "Headshot",
-                link: "/galenmolk/galen-molk-headshot.webp"
+                link: "/galen-molk-headshot.webp"
             }}/>
             <Material material={{
                 name: "Resume",
-                link: "/galenmolk/galen-molk-resume.pdf"
+                link: "/galen-molk-resume.pdf"
             }}/>
         </div>
         <div className='resume-grid'>
