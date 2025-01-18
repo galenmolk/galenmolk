@@ -48,6 +48,18 @@
       }
     },
     {
+      "project": "What Brings Us Together",
+      "role": "Supporting",
+      "theater": {
+        "name": "NYC Indie Film Festival",
+        "link": "https://www.instagram.com/nycindieff"
+      },
+      "collaborator": {
+        "name": "Jeff Musillo",
+        "link": "https://www.imdb.com/name/nm2298002/"
+      }
+    },
+    {
       "project": "Eighty-12",
       "role": "Lead",
       "theater": {

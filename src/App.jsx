@@ -1,5 +1,5 @@
 import './App.css'
-import portrait from './assets/img/portrait.webp'
+import portrait from './assets/img/headshot.webp'
 import resume from './assets/data/res.json'
 import dmtm from './assets/img/dmtm.webp'
 import Credit from "./Credit.jsx";

@@ -1,9 +1,9 @@
 :root {
     --c1: #000000FF;
     --c2: rgba(0, 0, 0, 0.75);
-    --c3: #B4E1FFFF;
-    --c4: rgba(129, 244, 149, 0.5);
-    --c5: rgb(208, 224, 241);
+    --c3: #f1e7e4;
+    --c4: #D0E3C4;
+    --c5: #ADC698;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 }
  
 .name {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 30px;
     margin: 0 auto 0.4rem auto;
 }
@@ -69,7 +69,7 @@ body {
     color: var(--c2);
     font-weight: 500;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .portrait-mask {
